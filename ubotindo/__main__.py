@@ -85,7 +85,9 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = f"""
 Hey! Senang kita bisa bertemu.
-Perkenalkan saya adalah *{dispatcher.bot.first_name}*
+Perkenalkan saya adalah
+*{dispatcher.bot.first_name}*
+
 @unfckbot adalah Bot yang paling lengkap untuk membantumu mengatur dengan lebih mudah dan aman  grup mu! 
 
 Tambahkan aku ke Supergroup dan atur aku sebagai Admin (Edit -> Admins -> tambahkan admin) untuk membiarkan aku melakukan tindakan!
@@ -102,7 +104,7 @@ buttons = [
             text="Tambahkan ke grup",
             url="t.me/unfckbot?startgroup=true"),
         InlineKeyboardButton(
-            text="grup",
+            text="🏴‍☠ႮΝҒႮᏟᏦᎪͲᏆǾΝ🏴‍☠",
             url="https://t.me/unfck"),
     ]]
 
@@ -275,7 +277,7 @@ def start(update, context):
 
         else:
             update.effective_message.reply_photo(
-                "https://telegra.ph/file/72e947e721e327ee2f5fd.jpg",
+                "https://telegra.ph/file/fa2c1e364bf7e3266d61f.jpg",
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
